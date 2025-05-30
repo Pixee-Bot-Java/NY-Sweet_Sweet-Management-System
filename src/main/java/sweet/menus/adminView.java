@@ -113,7 +113,9 @@ public class adminView {
                 logger.info("Enter the Feedback Id you want to delete");
                 int feedbacId = Integer.parseInt(scanner.nextLine());
                 if(recipeManager.deleteaFeedofaRecipe(recipeId, feedbacId))
-                logger.info(" Deleted the Feedback Id " + feedbacId);
+                {
+                    logger.info(" Deleted the Feedback Id " + feedbacId);
+                }
                 else
                     logger.warning("Feedback Id not valid " + feedbacId);
                 break;
